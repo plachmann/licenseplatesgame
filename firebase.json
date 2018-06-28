@@ -6,7 +6,7 @@
     ]
   },
   "hosting": {
-    "public": "dist",
+    "public": "dist/licenseplatesgame",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
