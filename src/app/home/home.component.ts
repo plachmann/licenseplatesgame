@@ -15,7 +15,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.states = States;
-    this.selectedStates = this.getCookie("statelist");
+    const cookievalue = this.getCookie("statelist");
+    if (cookievalue !== undefined) {
+      this.selectedStates = this.getCookie("statelist");
+    }
   }
 
   getCookie(key: string): any {

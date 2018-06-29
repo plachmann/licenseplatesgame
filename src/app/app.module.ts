@@ -5,9 +5,11 @@ import { CookieModule } from "ngx-cookie";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
+import { DrakeComponent } from './drake/drake.component';
+import { FreelanceComponent } from './freelance/freelance.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, DrakeComponent, FreelanceComponent],
   imports: [BrowserModule, AppRoutingModule, CookieModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent]
